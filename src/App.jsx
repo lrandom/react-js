@@ -1,13 +1,10 @@
 import './App.css'
-import Button from "./components/Button"
-import Button2 from "./components/Button2";
-import Tab from "./components/Tab";
-import List from "./components/List";
+import Signup from './pages/Signup';
 
 function App() {
   return (
     <>
-      <List></List>
+      <Signup />
     </>
   )
 }
