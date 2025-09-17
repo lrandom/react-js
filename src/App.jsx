@@ -1,9 +1,11 @@
 import './App.css'
-import Form  from './components/Form'
+import Button from "./components/Button"
 
 function App() {
   return (
-    <Form/> 
+    <>
+      <Button content="Click here"></Button>
+    </>
   )
 }
 
