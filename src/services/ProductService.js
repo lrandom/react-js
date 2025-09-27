@@ -3,4 +3,8 @@ const getProducts = async (payload) => {
   return await get("products", payload);
 };
 
-export { getProducts };
+const getProductDetail = async (id) => {
+  return await get(`products/${id}`);
+};
+
+export { getProducts, getProductDetail };

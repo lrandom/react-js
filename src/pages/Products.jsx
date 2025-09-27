@@ -30,9 +30,15 @@ const Products = () => {
                 {
                     products.map((item,index) => (
                         <div key={item.id} className="bg-gray-200 p-4 rounded-md">
-                            <h2 className="text-lg font-bold mb-2">{item.name}</h2>
-                            <img src="https://placehold.co/600x400" className="mb-6"/>
+                            <h2 className="text-lg font-bold mb-2">
+                                <a href={`/product_detail/${item.id}`}>{item.name}</a>
+                            </h2>
+                            <a href={`/product_detail/${item.id}`}>
+                                <img src={item.preview_img_path} className="mb-6"/>
+                            </a>
                             <p className="text-2xl text-gray-800 font-bold">{item.price}$</p>
+
+                           
                         </div>
                     ))
                 }
