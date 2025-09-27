@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signup } from "../services/UserService";
-import { Navigate, NavLink } from "react-router";
+import {  NavLink } from "react-router";
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
